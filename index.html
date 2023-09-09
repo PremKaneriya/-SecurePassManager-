@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">PassDeck</div>
+      <ul>
+        <li>From Developer</li>
+        <li><a href="https://github.com/PremKaneriya" target="_blank"><i class="fa-brands fa-2x fa-github" style="color: #000;"></i></a></li>
+        <li><a href="https://twitter.com/_premkaneriya?t=t0S6foZq50brwlKAGajsXQ&s=09" target="_blank"><i class="fa-brands fa-2x fa-twitter" style="color: #000;"></i></a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>Password Manager</h1>
+      <p>
+        We're thrilled to have you here. Your digital life contains a myriad of
+        passwords, and we know how challenging it can be to manage them all.
+        That's why we're here to make it easy for you.
+      </p>
+      <h2>Your Passwords <span id="alert">(Copied!)</span></h2>
+      <table>
+        <tr>
+          <th>Website</th>
+          <th>Username</th>
+          <th>Password</th>
+          <th>Delete</th>
+        </tr>
+      </table>
+
+      <h2>Add a Password</h2>
+      <form action="/submit" method="post">
+        <!-- Text input for website -->
+        <label for="website">Website:</label>
+        <input type="text" id="website" name="website" required />
+        <br /><br />
+
+        <!-- Text input for username -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <br /><br />
+
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <br />
+        <!-- Submit button -->
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
